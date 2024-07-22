@@ -78,3 +78,32 @@ def convert_temperature(temperature, unit):
 
 print("Exercise 4: Convert 0°C to Fahrenheit:", convert_temperature(0, "C"))
 print("Exercise 4: Convert 32°F to Celsius:", convert_temperature(32, "F"))
+
+# Exercise 5: Sum to N
+#
+# Write a function named `sum_to` that takes a single integer n and returns the sum of all integers from 1 to n.
+#
+# Examples:
+# sum_to(6) should return 21.
+# sum_to(10) should return 55.
+#
+# Define the function and then call it below.
+
+
+def sum_to(n):
+
+    total_sum = 0
+
+    for i in range(1, n + 1):
+        total_sum += i
+
+    return total_sum
+
+
+"""Function Definition: def sum_to(n): defines a function named sum_to that takes an integer n as input.
+Initialization: total_sum = 0 initializes a variable total_sum to zero, which will store the sum of integers.
+Loop through Numbers: for i in range(1, n + 1): sets up a for loop that iterates i from 1 to n (inclusive).
+Accumulate Sum: total_sum += i adds each value of i (from 1 to n) to total_sum, effectively summing all the integers.
+Return the Sum: return total_sum returns the computed sum after the loop completes."""
+
+print("Exercise 5:", sum_to(6))
