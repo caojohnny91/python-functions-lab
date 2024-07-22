@@ -107,3 +107,34 @@ Accumulate Sum: total_sum += i adds each value of i (from 1 to n) to total_sum, 
 Return the Sum: return total_sum returns the computed sum after the loop completes."""
 
 print("Exercise 5:", sum_to(6))
+
+
+# Exercise 6: Find the Largest Number
+#
+# Write a function named `largest` that takes three integers as arguments and returns the largest of them.
+#
+# Examples:
+# largest(1, 2, 3) should return 3.
+# largest(10, 4, 2) should return 10.
+#
+# Define your function and test it with different inputs.
+def largest(num1, num2, num3):
+    return max(num1, num2, num3)
+
+
+print("Exercise 6:", largest(1, 2, 3))
+
+
+def largest(num1, num2, num3):
+    max_num = num1
+
+    if num2 > max_num:
+        max_num = num2
+
+    if num3 > max_num:
+        max_num = num3
+
+    return max_num
+
+
+print("Exercise 6:", largest(10, 4, 2))
